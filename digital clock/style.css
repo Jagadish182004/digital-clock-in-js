@@ -1,0 +1,87 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url('digital-7.ttf') format('truetype');
+}
+@keyframes changeColor {
+    0% { background-color: gold; }
+    20% { background-color: silver; }
+    40% { background-color: green; }
+    60% { background-color: violet; }
+    80% { background-color: red; }
+    100% { background-color: blue; }
+}
+
+
+
+h1 {
+    font-family: 'Digital-7', sans-serif;
+    font-size: 60px;
+    color: #333;
+}
+:root{
+--light-color:goldenrod;
+}
+
+body{
+font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  height: 100vh;
+  width: 100vw;
+  animation: changeColor 30s infinite; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+h2{
+    font-size: 50px;
+    font-weight: 500px;
+    color:silver,goldenrod;
+    margin-top: 13%;
+    padding-bottom: 20px;
+    font-family: digital-7, sans-serif;
+
+    text-shadow: 2px 2px 4px var(--light-color);
+    
+}
+.frame{
+    width: 600px;
+    height: 200px;
+    background-image: url('clock.jpeg');
+    background-size: cover;
+    background-position: center;
+    border:25px solid #fad506;
+    padding:10px;
+    border-image: fill;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    font-size: 60px;
+    font-weight: 600;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock{
+    
+    color: var(--light-color);
+    font-size: 90px;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 4px 6px 4px var(--light-color);
+    filter: blur(0.5px);
+    font-family: 'Digital-7', sans-serif;
+    opacity: 1.9;
+}
